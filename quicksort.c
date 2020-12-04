@@ -7,8 +7,9 @@ void main()
 {
 int a[max],i,n; clock_t s,e;
 printf("Enter the value of n:"); 
-scanf("%d",&n); for(i=0;i<n;i++)
-a[i]=rand()%100;
+scanf("%d",&n); 
+for(i=0;i<n;i++)
+    a[i]=rand()%100;
 printf("\nThe array elements before\n"); 
 for(i=0;i<n;i++)
     printf("%d\t",a[i]);
