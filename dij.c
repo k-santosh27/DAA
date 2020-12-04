@@ -16,7 +16,9 @@ void main()
 	printf("\nEnter the source node: ");
 	scanf("%d",&source);
 	dij(source,cost,visited,d,n);
-	for(i=1; i<=n; i++) if(i!=source) printf("\nShortest path from %d to %d is %d",source,i,d[i]);
+	for(i=1; i<=n; i++) 
+	    if(i!=source) 
+	    printf("\nShortest path from %d to %d is %d",source,i,d[i]);
 }
 void dij(int source,int cost[20][20],int visited[20],int d[20],int n)
 {
@@ -33,7 +35,7 @@ void dij(int source,int cost[20][20],int visited[20],int d[20],int n)
 		min=999; 
 		for(i=1;i<=n;i++) 
 		{ 
-			if(!visited[i] )
+			if(!visited[i])
 			{
 				if(d[i]<min)
 	  			{	 
