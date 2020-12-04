@@ -4,8 +4,9 @@ void  printsolution(int,int[]);
 int  place(int x[],int k)
 {
 int i;
-for(i=1;i<k;i++) if(x[i]==x[k]||(abs(x[i]-x[k]))==abs(i-k))
-    return 0;
+for(i=1;i<k;i++) 
+    if(x[i]==x[k]||(abs(x[i]-x[k]))==abs(i-k))
+        return 0;
 return 1;
 }
 void printsolution(int n,int x[])
